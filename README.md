@@ -82,8 +82,8 @@ Settings are persisted to NVS flash and survive reboots.
 The `platformio.ini` and all required configuration are included in the repository.
 
 ```bash
-git clone https://github.com/silasgubi/MP3PlayerForM5CardputerBLE.git
-cd MP3PlayerForM5CardputerBLE
+git clone https://github.com/silasgubi/MP3PlayerForM5CardputerEQ.git
+cd MP3PlayerForM5CardputerEQ
 pio run
 # Binary: .pio/build/m5stack-cardputer/firmware.bin
 ```
