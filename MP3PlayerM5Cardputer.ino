@@ -91,6 +91,7 @@ const char* helpLines[] = {
   "S: Search    F: Shuffle",
   "Esc / ` : Settings",
   "V: Visualizer",
+  "E: Equalizer (EQ)",
   "I:print Close Help",
   "--- SMART FEATURES ---",
   "Web UI: Enable Wi-Fi in",
@@ -107,11 +108,14 @@ const char* helpLines[] = {
   "Made with <3 by SaM",
   "Sit back, relax, and",
   "enjoy the music!",
-  "---",
   "GH: github.com/sanchitminda",
-  "Share your suggestions!"
+  "--- EQ FORK ---",
+  "7-band EQ by silasgubi",
+  "github.com/silasgubi/",
+  "MP3PlayerForM5CardputerEQ",
+  "Press E on player screen!"
 };
-const int numHelpLines = 29;
+const int numHelpLines = 40;
 const int numSettings = 19;   // +1 for Playlist Mode +1 for Fullscreen OFF Vis + Language + Font Size
 
 // ==========================================
@@ -1774,7 +1778,6 @@ public:
         msc.onWrite(onMSCWrite);
         msc.onStartStop(onMSCStartStop);
         msc.mediaPresent(true);
-        msc.isWritable(true);
         msc.begin(sdSectorCount, sdSectorSize);
         
         USB.begin();
